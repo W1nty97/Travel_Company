@@ -1,12 +1,12 @@
 "use strict";
 
 import { tikets } from "./data.js";
+import { user } from "./sign.js";
+
 
 const inputs = document.querySelectorAll(".main__box-content");
 let txt1 = document.querySelector("#txt-train");
 let txt2 = document.querySelector("#txt-plane");
-
-export let arr_bucket = [];
 
 for (let inp of inputs) {
   inp.addEventListener("click", (event) => {
@@ -26,10 +26,9 @@ const input = document.querySelector("#input");
 const output = document.querySelector("#output");
 const train = document.querySelector("#inp-train");
 const plane = document.querySelector("#inp-plane");
-
 const container = document.querySelector(".main__box-cards");
-
 const btn_filter = document.querySelector(".main__btn-seach");
+
 btn_filter.addEventListener("click", () => {
   filter(input.value, output.value, train, plane);
   if (document.querySelector(".main__card")) {
@@ -65,24 +64,18 @@ btn_filter.addEventListener("click", () => {
     date.className = "card__date";
     price.className = "card__price";
     transport.className = "card__transport";
-    card_button.className = "card__bucket";
+    card_button.className = "card__basket";
 
     card_button.addEventListener("click", () => {
-      let index = arr_bucket.findIndex((el) => el.id === filter_tikets[i].id);
-      if (index !== -1) {
-        filter_tikets[i].count += 1;
-      } else {
-        filter_tikets[i].count += 1;
-        arr_bucket.push(filter_tikets[i]);
-      }
-
-    });
-
+      // console.log(user.basket)
+      user.basket.set(user.basket.size, filter_tikets[i]);
+      // console.log(user);
+    }); // функционал кнопки для добавления в корзину
     image.src = filter_tikets[i].img;
     title.textContent = filter_tikets[i].hotel;
     sity.textContent = filter_tikets[i].output + "/" + filter_tikets[i].sity;
     date.textContent = "Дата: " + filter_tikets[i].date;
-    price.textContent = "Цена: " + filter_tikets[i].price;
+    price.textContent = "Цена: " + filter_tikets[i].price + "₽";
     transport.textContent = "Транспорт: " + filter_tikets[i].transport;
     card_button.textContent = "Добавить в корзину";
   }

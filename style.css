@@ -4,7 +4,7 @@ body {
   height: 745px;
   font-style: italic;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .header {
   background-color: #ffffff;
@@ -66,29 +66,28 @@ body {
   color: #ffac69;
   cursor: grabbing;
 }
-.header__popup-bucket {
+.header__popup-basket {
   position: absolute;
   display: none;
   background-color: #ffffff;
   border: 2px solid #e5e2e1;
-  width: 50%;
-  height: 50%;
-  margin-right: 10%;
-  margin-top: 5.2%;
+  width: 100%;
+  height: 90%;
+  margin-top: 5%;
 }
-.header__bucket-text {
+.header__basket-text {
   width: 100%;
   height: 7%;
   border-bottom: 1px solid #e5e2e1;
 }
-.header__bucket-text-2 {
+.header__basket-text-2 {
   width: 100%;
   height: 10%;
   display: flex;
   justify-content: center;
   border-top: 1px solid #e5e2e1;
 }
-.bucket__text {
+.basket__text {
   width: 100%;
   height: 100%;
   text-align: center;
@@ -96,7 +95,7 @@ body {
   align-content: center;
   margin: 0%;
 }
-.bucket__text-2 {
+.basket__text-2 {
   width: 25%;
   height: 100%;
   font-size: 130%;
@@ -105,13 +104,13 @@ body {
   align-content: center;
   margin: 0%;
 }
-.bucket__text-2:hover {
+.basket__text-2:hover {
   color: #ff7300;
 }
-.bucket__text-2:active {
+.basket__text-2:active {
   color: #ffac69;
 }
-.bucket__cards {
+.basket__cards {
   width: 100%;
   height: 83%;
   gap: 10px;
@@ -123,28 +122,88 @@ body {
   overflow-x: hidden;
 }
 .header__card {
-  width: 25%;
-  height: 85%;
+  width: 20%;
+  height: 65%;
   background-color: #ffffff;
   border-radius: 5%;
   border: 3px solid #e5e2e1;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-.header__card-count{
+.header__card-count {
+  width: 60%;
+  height: 100%;
+  margin: 0%;
+  font-size: 190%;
+  text-align: center;
+  align-content: center;
+  color: #ff7300;
+}
+.header__card-input {
   margin: 0%;
   margin-left: 1.5%;
   font-size: 100%;
+}
+.header__card-div {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+}
+.card-minus {
+  width: 20%;
+  height: 80%;
+  margin: 0%;
+  font-size: 250%;
+  font-style: normal;
+  text-align: center;
+  color: #e5e2e1;
+  border: 3px solid #e5e2e1;
+  border-radius: 15%;
+  align-content: center;
+}
+.card-minus:hover {
+  border: 3px solid #ff7300;
   color: #ff7300;
 }
-.bi-x-circle-fill-3{
+.card-minus:active {
+  border: 3px solid #ffac69;
+  color: #ffac69;
+}
+.card-plus {
+  width: 20%;
+  height: 80%;
+  margin: 0%;
+  font-size: 250%;
+  font-style: normal;
+  text-align: center;
+  color: #e5e2e1;
+  border: 3px solid #e5e2e1;
+  border-radius: 15%;
+  align-content: center;
+}
+.card-plus:hover {
+  border: 3px solid #ff7300;
+  color: #ff7300;
+}
+.card-plus:active {
+  border: 3px solid #ffac69;
+  color: #ffac69;
+}
+.header__card-title {
+  margin: 0%;
+  font-size: 110%;
+  text-align: center;
+  color: #ff7300;
+}
+.bi-x-circle-fill-3 {
   position: absolute;
   color: #e5e2e1;
   margin-left: 30%;
 }
-.bi-x-circle-fill-3:hover{
+.bi-x-circle-fill-3:hover {
   color: #ff7300;
 }
-.bi-x-circle-fill-3:active{
+.bi-x-circle-fill-3:active {
   color: #ffac69;
 }
 .header__box-sign {
@@ -443,8 +502,7 @@ body {
   size: cover;
   border-radius: 6.9%;
 }
-.card__title,
-.header__card-title {
+.card__title {
   margin: 0%;
   font-size: 120%;
   text-align: center;
@@ -473,14 +531,14 @@ body {
   margin-left: 1.5%;
   font-size: 100%;
 }
-.card__bucket {
+.card__basket {
   margin: 5%;
   text-align: end;
   color: #e5e2e1;
 }
-.card__bucket:hover {
+.card__basket:hover {
   color: #ff7300;
 }
-.card__bucket:active {
+.card__basket:active {
   color: #ffac69;
 }
