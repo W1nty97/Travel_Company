@@ -29,7 +29,7 @@ const plane = document.querySelector("#inp-plane");
 const container = document.querySelector(".main__box-cards");
 const btn_filter = document.querySelector(".main__btn-seach");
 
-btn_filter.addEventListener("click", () => {
+btn_filter.addEventListener("click", () => { // очищает див от карт
   filter(input.value, output.value, train, plane);
   if (document.querySelector(".main__card")) {
     let rem = document.querySelectorAll(".main__card");
