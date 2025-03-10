@@ -21,6 +21,8 @@ basket_btn.addEventListener("click", () => {
     (obj, idx, arr) => idx === arr.findIndex((t) => t.id === obj.id)
   ); // удаление повторных элементов из массива с вбыранными карточками
 
+  let num = 0;
+
   for (let element of unique) {
     let card = document.createElement("div");
     let image = document.createElement("img");
@@ -68,13 +70,18 @@ basket_btn.addEventListener("click", () => {
     minus.textContent = "-";
     plus.textContent = "+";
 
+    const allPrice = document.querySelector(".header__order-price");
+    num += Number(element.price) * Number(count.textContent);
+    allPrice.textContent = "Сумма к оплате: " + num + "₽";
+
     minus.addEventListener("click", () => {
       count.textContent = Number(count.textContent) - 1;
+      num -= Number(element.price);
+      allPrice.textContent = "Сумма к оплате: " + num + "₽";
       if (count.textContent == 0) {
         for (let [key, value] of array) {
           if (value == element) {
             array.delete(key);
-            console.log(array);
           }
         }
         card.remove();
@@ -85,9 +92,15 @@ basket_btn.addEventListener("click", () => {
     });
 
     plus.addEventListener("click", () => {
-      count.textContent = Number(count.textContent) + 1;
-      price.textContent =
-        "Цена: " + element.price * Number(count.textContent) + "₽";
+      if (count.textContent == 10) {
+        plus.preventDefault;
+      } else {
+        count.textContent = Number(count.textContent) + 1;
+        price.textContent =
+          "Цена: " + element.price * Number(count.textContent) + "₽";
+        num += Number(element.price);
+        allPrice.textContent = "Сумма к оплате: " + num + "₽";
+      }
     });
   }
 });
