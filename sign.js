@@ -1,4 +1,5 @@
 "use strict";
+
 import { popup_basket } from "./basket.js";
 
 const sign_popup = document.querySelector(".header__box-popup");
