@@ -68,7 +68,6 @@ register_btn.addEventListener("click", () => {
     alert(login_result.error_message);
   }
 });
-
 const sign_popup_2 = document.querySelector(".header__box-popup-2");
 const sign_btn_open_2 = document.querySelector(".header__popup-register");
 const sign_btn_close_2 = document.querySelector(".bi-x-circle-fill-2");
