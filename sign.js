@@ -1,4 +1,5 @@
 "use strict";
+import { popup_basket } from "./basket.js";
 
 const sign_popup = document.querySelector(".header__box-popup");
 const sign_btn_open = document.querySelector(".header__sign-text");
@@ -61,6 +62,7 @@ register_btn.addEventListener("click", () => {
     arr_basket.set(user.id, user.basket); // добавляет id и индивидуальную корзину пользователяшо
     array = arr_basket.get(user.id); // перезаписыввает импортируемую ИКП
     console.log(user.basket);
+    popup_basket.style.display = "none";
   } else {
     alert(login_result.error_message);
   }

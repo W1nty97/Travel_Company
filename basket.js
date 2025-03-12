@@ -3,7 +3,7 @@
 import { array } from "./sign.js";
 
 const basket_btn = document.querySelector(".bi-cart4");
-const popup_basket = document.querySelector(".header__popup-basket");
+export const popup_basket = document.querySelector(".header__popup-basket");
 const basket_cards = document.querySelector(".basket__cards");
 
 basket_btn.addEventListener("click", () => {
