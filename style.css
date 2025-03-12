@@ -30,6 +30,7 @@ body {
   width: 100%;
   margin: 0%;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  cursor: default;
 }
 .header__text-title {
   height: 60%;
@@ -94,6 +95,7 @@ body {
   font-size: 120%;
   align-content: center;
   margin: 0%;
+  cursor: default;
 }
 .basket__text-2 {
   width: 25%;
@@ -103,6 +105,7 @@ body {
   color: #ff7300;
   align-content: center;
   margin: 0%;
+  cursor: default;
 }
 .cards_order {
   width: 100%;
@@ -127,6 +130,7 @@ body {
   border-radius: 5%;
   border: 3px solid #e5e2e1;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  cursor: pointer;
 }
 .header__card-count {
   width: 60%;
@@ -136,17 +140,20 @@ body {
   text-align: center;
   align-content: center;
   color: #ff7300;
+  cursor: default;
 }
 .header__card-input {
   margin: 0%;
   margin-left: 1.5%;
   font-size: 100%;
+  cursor: default;
 }
 .header__card-div {
   width: 100%;
   height: 15%;
   display: flex;
   justify-content: center;
+  cursor: default;
 }
 .card-minus {
   width: 20%;
@@ -163,10 +170,12 @@ body {
 .card-minus:hover {
   border: 3px solid #ff7300;
   color: #ff7300;
+  cursor: grab;
 }
 .card-minus:active {
   border: 3px solid #ffac69;
   color: #ffac69;
+  cursor: grabbing;
 }
 .card-plus {
   width: 20%;
@@ -183,10 +192,12 @@ body {
 .card-plus:hover {
   border: 3px solid #ff7300;
   color: #ff7300;
+  cursor: grab;
 }
 .card-plus:active {
   border: 3px solid #ffac69;
   color: #ffac69;
+  cursor: grabbing;
 }
 .header__card-title {
   margin: 0%;
@@ -198,7 +209,7 @@ body {
   width: 30%;
   height: 100%;
   background-color: #ffffff;
-  border-left: 1px solid #e5e2e1;
+  border-left: 3px solid #e5e2e1;
 }
 .header__order-text {
   width: 100%;
@@ -208,6 +219,7 @@ body {
   align-content: center;
   font-size: 150%;
   color: #ff7300;
+  cursor: default;
 }
 .header__order-price {
   width: 100%;
@@ -217,11 +229,12 @@ body {
   align-content: center;
   font-size: 150%;
   color: #ff7300;
+  cursor: default;
 }
 .header__order-inputs {
   width: 100%;
   height: 80%;
-  background-color: #e5e2e1;
+  background-color: #fceee6;
   align-content: center;
 }
 .header__inputs-name {
@@ -247,29 +260,45 @@ body {
 }
 .card_num {
   width: 80%;
-  height: 25%;
+  height: 55%;
   font-size: 110%;
   border: 1px solid #e5e2e1;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
 }
 .header__inputs-num2 {
   display: flex;
   width: 100%;
-  height: 20%;
+  height: 10%;
   justify-content: space-evenly;
   align-items: center;
 }
 .card_num2 {
   width: 30%;
-  height: 25%;
+  height: 35%;
   font-size: 110%;
   border: 1px solid #e5e2e1;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
 }
 .card_num2:focus {
   border: 1px solid #ff7300;
 }
 .card_num:focus {
+  border: 1px solid #ff7300;
+}
+.card_num3 {
+  width: 70%;
+  height: 35%;
+  font-size: 110%;
+  border: 1px solid #e5e2e1;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+}
+.card_num3:focus {
+  border: 1px solid #ff7300;
+}
+.card_num3:focus {
   border: 1px solid #ff7300;
 }
 .bi-x-circle-fill-3 {
@@ -279,6 +308,7 @@ body {
 }
 .bi-x-circle-fill-3:hover {
   color: #ff7300;
+  cursor: pointer;
 }
 .bi-x-circle-fill-3:active {
   color: #ffac69;
@@ -332,6 +362,7 @@ body {
   color: #e5e2e1;
   margin-left: 45%;
   margin-top: 1%;
+  cursor: pointer;
 }
 .bi-x-circle-fill:hover {
   color: #ff7300;
@@ -344,6 +375,7 @@ body {
   margin: 1%;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: #ff7300;
+  cursor: default;
 }
 #title {
   font-size: 250%;
@@ -369,6 +401,7 @@ body {
   color: #e5e2e1;
   font-size: 140%;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  cursor: pointer;
 }
 .header__popup-sign:hover {
   color: #ff7300;
@@ -458,6 +491,7 @@ body {
   text-align: center;
   align-content: center;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  cursor: default;
 }
 .main__filter-input {
   width: 100%;
@@ -486,6 +520,7 @@ body {
   align-content: end;
   color: transparent;
   -webkit-text-stroke: 1px #ff7300;
+  cursor: default;
 }
 .main__box-content {
   width: 100%;
@@ -498,12 +533,14 @@ body {
 .main__content-input {
   width: 20%;
   height: 30%;
+  cursor: pointer;
 }
 .main__content-txt {
   font-size: 110%;
   color: #e5e2e1;
   margin: 0%;
   width: 50%;
+  cursor: default;
 }
 .main__section-slot {
   width: 80%;
@@ -512,11 +549,16 @@ body {
   font-style: italic;
   font-size: 130%;
   color: #ff7300;
+  cursor: grab;
+}
+.main__section-slot:active {
+  cursor: pointer;
 }
 #title-input-2 {
   width: 100%;
   height: 20%;
   font-size: 120%;
+  cursor: default;
 }
 .main__box-content-two {
   height: 80%;
@@ -545,10 +587,12 @@ body {
 .main__btn-seach:hover {
   color: #ff7300;
   border: 1px solid #ff7300;
+  cursor: grab;
 }
 .main__btn-seach:active {
   color: #ffac69;
   border: 1px solid #ffac69;
+  cursor: grabbing;
 }
 .main__box-cards {
   width: 100%;
@@ -560,7 +604,6 @@ body {
   overflow: scroll;
   overflow-x: hidden;
 }
-
 .main__card {
   width: 253px;
   height: 378px;
@@ -571,6 +614,7 @@ body {
 }
 .main__card:hover {
   border: 3px solid #ff7300;
+  cursor: pointer;
 }
 .card__image,
 .header__card-image {
@@ -615,6 +659,7 @@ body {
 }
 .card__basket:hover {
   color: #ff7300;
+  cursor: cell;
 }
 .card__basket:active {
   color: #ffac69;
